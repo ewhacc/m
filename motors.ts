@@ -58,20 +58,20 @@ namespace cck {
                 this.setAngle(degrees);
         }
 
-        enum MotDir {
+        enum Modir {
             //% block="반시계방향"
-            CCW,
-            //% block="시계방향"
-            CW
+            CCW, 
+            //% block="시계방향p"
+            CW 
         }
 
-        //% blockId=servoservorunf block="연속모터 %servo %dir 돌리기"
+        //% blockId=servoservorunf block="연속모터 %servo #dir 돌리기"
         //% servo.fieldEditor="gridpicker"
         //% servo.fieldOptions.width=220
         //% servo.fieldOptions.columns=2
         //% dir.fieldEditor="gridpicker"
         //% parts=microservo trackArgs=0
-        run_forback(dir: RotDir): void {
+        run_for(dir: MoDir): void {
             if(dir == CCW)
                 this.setAngle(this._maxAngle);
             else

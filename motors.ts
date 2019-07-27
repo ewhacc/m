@@ -61,7 +61,7 @@ namespace cck {
         enum MoDir {
             //% block="반시계방향"
             CCW, 
-            //% block="시계방향p"
+            //% block="시계방향"
             CW 
         }
 

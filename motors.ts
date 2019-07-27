@@ -65,7 +65,7 @@ namespace cck {
             CW 
         }
 
-        //% blockId=servoservorunf block="연속모터 %servo #dir 돌리기"
+        //% blockId=servoservorunf block="연속모터 %servo %dir 돌리기"
         //% servo.fieldEditor="gridpicker"
         //% servo.fieldOptions.width=220
         //% servo.fieldOptions.columns=2
@@ -76,15 +76,6 @@ namespace cck {
                 this.setAngle(this._maxAngle);
             else
                 this.setAngle(this._minAngle);
-        }
-
-        //% blockId=servoservorunb block="연속모터 %servo 시계방향 돌리기"
-        //% servo.fieldEditor="gridpicker"
-        //% servo.fieldOptions.width=220
-        //% servo.fieldOptions.columns=2
-        //% parts=microservo trackArgs=0
-        run_back(): void {
-            this.setAngle(this._minAngle);
         }
 
         /**
